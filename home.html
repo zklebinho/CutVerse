@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CutVerse | Cute • Random • Fun</title>
+    <link rel="stylesheet" href="frontend/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700;800&family=Space+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="kawaii-container">
+        <nav class="site-nav">
+            <div class="brand">CutVerse</div>
+            <div class="nav-links">
+                <a href="#hero">Home</a>
+                <a href="#about">Sobre</a>
+                <a href="#apis">APIs</a>
+                <a href="https://github.com" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+        </nav>
+
+        <div class="hero-card">
+            <div class="win-menu">
+                <span>File</span>
+                <span>Edit</span>
+                <span>View</span>
+                <span>Help</span>
+            </div>
+            <div class="hero-image">🐈‍⬛</div>
+            <div class="sticker">✦</div>
+        </div>
+
+        <section id="hero" class="hero-panel">
+            <div class="hero-copy">
+                <p class="badge">V1 • KAWAII • NOSTALGIA</p>
+                <h1 class="title">CUTVERSE</h1>
+                <p class="subtitle">Cute • Random • Fun</p>
+                <p class="hero-text">Gire a sorte e receba um conteúdo surpresa escolhido em tempo real pela nossa API.</p>
+                <button id="btn-girar" class="girar-btn">🎲 GIRAR SORTE</button>
+            </div>
+            <div class="hero-card">
+                <div class="sticker">✨</div>
+                <div class="hero-image">
+                    <span>🐱</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="result-panel" id="result">
+            <div class="result-info">
+                <p id="content-label" class="result-title">Clique no botão para descobrir algo novo.</p>
+                <p id="content-source" class="result-meta">CutVerse V1</p>
+            </div>
+
+            <div id="resultado-box" class="resultado-box">
+                <p id="loading-text" class="hidden">Buscando fofuras na internet... 🐾</p>
+                <div id="media-container">
+                    <p class="placeholder-text">Sua surpresa aparece aqui.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="info-panel">
+            <h2 class="section-title">Sobre CutVerse</h2>
+            <p>CutVerse é uma roleta de conteúdo aleatório inspirada na internet dos anos 2000, com uma mistura kawaii, Y2K e nostalgia.</p>
+            <ul class="feature-list">
+                <li>Sem login, sem cadastro, sem banco de dados.</li>
+                <li>Conteúdo atualizado a cada clique.</li>
+                <li>Backend em FastAPI, frontend em HTML, CSS e JavaScript puro.</li>
+            </ul>
+        </section>
+
+        <section id="apis" class="info-panel">
+            <h2 class="section-title">APIs integradas</h2>
+            <div class="api-grid">
+                <span class="chip">🐱 CATAAS</span>
+                <span class="chip">🐱 The Cat API</span>
+                <span class="chip">🐕 Dog API</span>
+                <span class="chip">🦊 Random Fox</span>
+                <span class="chip">🦆 Random Duck</span>
+                <span class="chip">🐕 Shibe Online</span>
+                <span class="chip">🐹 Capybara API</span>
+                <span class="chip">😂 Meme API</span>
+                <span class="chip">🎬 Tenor</span>
+                <span class="chip">📸 Picsum</span>
+            </div>
+            <p class="small-note">O frontend nunca chama essas APIs diretamente. O backend FastAPI faz a ponte e entrega a surpresa para o CutVerse.</p>
+        </section>
+
+        <footer class="footer-panel">
+            <p>CutVerse V1 — Feito para diversão rápida e nostálgica. ✨</p>
+        </footer>
+    </div>
+
+    <script>
+        // Ajuste esta URL quando o backend estiver hospedado em outra origem.
+        // window.CUTVERSE_API_URL = 'https://seu-backend.onrender.com/api/random';
+    </script>
+    <script async src="https://tenor.com/embed.js"></script>
+    <script src="frontend/js/app.js"></script>
+</body>
+</html>
